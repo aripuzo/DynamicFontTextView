@@ -16,6 +16,7 @@
 		E190BDCB26108874006C3133 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E190BDC926108874006C3133 /* Main.storyboard */; };
 		E190BDCD26108878006C3133 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E190BDCC26108878006C3133 /* Assets.xcassets */; };
 		E190BDD026108878006C3133 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E190BDCE26108878006C3133 /* LaunchScreen.storyboard */; };
+		E190BDD626108ABF006C3133 /* DynamicFontTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190BDD526108ABF006C3133 /* DynamicFontTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		E190BDCC26108878006C3133 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E190BDCF26108878006C3133 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E190BDD126108878006C3133 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E190BDD526108ABF006C3133 /* DynamicFontTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFontTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				E190BDA626108770006C3133 /* DynamicFontTextView.h */,
 				E190BDA726108770006C3133 /* Info.plist */,
+				E190BDD526108ABF006C3133 /* DynamicFontTextView.swift */,
 			);
 			path = DynamicFontTextView;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					E190BDA226108770006C3133 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					E190BDAB26108770006C3133 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E190BDD626108ABF006C3133 /* DynamicFontTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		E190BDB826108770006C3133 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9EZF5Z292P;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = buttontech.com.ng.DynamicFontTextView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		E190BDB926108770006C3133 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9EZF5Z292P;
@@ -485,6 +493,7 @@
 		E190BDBB26108770006C3133 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9EZF5Z292P;
 				INFOPLIST_FILE = DynamicFontTextViewTests/Info.plist;
@@ -503,6 +512,7 @@
 		E190BDBC26108770006C3133 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9EZF5Z292P;
 				INFOPLIST_FILE = DynamicFontTextViewTests/Info.plist;
